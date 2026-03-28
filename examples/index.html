@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>small-vue — mini Vue3 实现示例</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    #app {
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- small-vue 将在此挂载应用 -->
+    <noscript>请启用 JavaScript 以运行示例</noscript>
+  </div>
+
+  <script type="module">
+    import { createApp } from '../src/index.js'
+    import { App } from './app.js'
+
+    // 创建应用并挂载到 #app
+    const app = createApp(App)
+    app.mount('#app')
+  </script>
+</body>
+</html>

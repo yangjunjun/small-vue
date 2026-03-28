@@ -1,0 +1,10 @@
+{
+  "name": "small-vue",
+  "version": "0.1.0",
+  "description": "A mini Vue3 implementation for learning purposes",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}
